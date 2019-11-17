@@ -1,10 +1,5 @@
 const courseModel = require('../models/course');
-const fs = require('fs');
 const path = require('path');
-const p = path.join(
-    __dirname, '..',
-    'data', 
-    'courses.json');
 
 exports.getCourses = (req, res) => {
     courseModel.getCoursesFromDb(courses => {

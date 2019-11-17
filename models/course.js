@@ -1,9 +1,4 @@
-const fs = require('fs');
 const path = require('path');
-const p = path.join(
-    __dirname, '..',
-    'data', 
-    'courses.json');
 const credentials = require('../credentials');
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/courses', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -24,7 +19,7 @@ db.once('open', function(callback) {
     exports.getCoursesFromDb = cb => {
         Course.find((err, courses) => {
             if (err) return err;
-            
+
             cb(courses);
         });
     };
