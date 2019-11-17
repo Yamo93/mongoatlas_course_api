@@ -1,5 +1,4 @@
 const courseModel = require('../models/course');
-const path = require('path');
 
 exports.getCourses = (req, res) => {
     courseModel.getCoursesFromDb(courses => {

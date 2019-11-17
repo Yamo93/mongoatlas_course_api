@@ -1,4 +1,3 @@
-const path = require('path');
 const credentials = require('../credentials');
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/courses', { useNewUrlParser: true, useUnifiedTopology: true });
